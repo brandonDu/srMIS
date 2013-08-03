@@ -1,0 +1,88 @@
+{% extends "./base.html" %}
+{% block title %} 关于系统 {% end %}
+{% block css %}
+<!--css for the homepage-->
+<link rel="stylesheet" type="text/css" href="{{ static_url('css/homepage.css') }}">
+<!--end css for homepage-->
+{% end %}
+
+{% block username %}{% end %}
+
+{% block pane %}
+<div class="container-fluid" >
+      <div class="row-fluid">
+        
+        <div class="span12">
+          <div class="hero-unit">
+            <!--此处显示表单表格以及其他信息-->
+             <h1>Hi, Welcome to Sunrong Management System!</h1>
+        <p>Sunrong Management System (下面简称SRMIS) 是一个为小型商品销售企业开发的一个进销存系统，此系统基于python的tornado web框架和pregSql数据库，采用bootstrap html/css框架以及jQuery库进行前端开发。</p>
+        <h3>开发人员</h3>
+        <ul>
+          <li>
+            杜文斌
+          </li>  
+        </ul>
+        <h3>技术支持</h3>
+        <ul>
+          <li>
+            吕成功博士
+          </li>  
+        </ul>
+        <h3>运行环境</h3>
+        <ul>
+          <li>
+            windows/Mac/ Linux/Unix
+          </li> 
+          <li>
+            Chrome/safari/firefox/ie 9+
+          </li>
+         
+        </ul>
+        <h3>数据库</h3>
+        <ul>
+          <li>
+            pgsql
+          </li>  
+        </ul>
+        <h3>开发语言</h3>
+        <ul>
+          <li>
+            python
+          </li>  
+          <li>
+            sql
+          </li>
+          <li>
+            html/css/javascript
+          </li>
+       </ul>
+        <h3>开发框架</h3>
+        <ul> 
+           <li>
+            tornado
+          </li>  
+           <li>
+            bootstrap
+          </li>  
+           <li>
+            jQuery
+          </li> 
+        </ul>
+
+
+
+            <!--end-->
+            
+          </div>
+ 
+   
+        </div><!--/span-->
+      </div><!--/row-->
+
+    </div><!--/.fluid-container-->
+{% end %}
+
+
+{% block js %}
+{% end %}

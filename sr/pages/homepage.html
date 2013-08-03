@@ -1,0 +1,55 @@
+{% extends "./base.html" %}
+{% block title %} 首页 {% end %}
+
+
+{% block css %}
+<!--css for the homepage-->
+<link rel="stylesheet" type="text/css" href="{{ static_url('css/homepage.css') }}">
+<!--end css for homepage-->
+{% end %}
+
+{% block username %}{% end %}
+
+{% block pane %}
+<div class="container-fluid" >
+      <div class="row-fluid">
+        <div class="span2">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">商品信息</li>
+              <li><a href="/statistic">销售曲线</a></li> 
+              <li><a href="/qualification">商品资质</a></li>
+              <li class="nav-header">进销存管理</li>
+              <li><a href="/query">信息查询</a></li>
+              <li><a href="/goods">商品登记</a></li>
+              <li><a href="/purchase">采购管理</a></li>
+              <li><a href="/store">库存管理</a></li>
+              <li><a href="/sell">销售管理</a></li>
+              <li><a href="/return">退货管理</a></li>
+              <li class="nav-header">客户管理</li>
+              <li><a href="/register">注册客户</a></li>              
+              <li class="nav-header">系统管理</li>
+              <li><a href="/user">用户管理</a></li>
+              <li><a href="/authority">权限分配</a></li>
+              
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span10">
+          <div class="hero-unit">
+            <!--此处显示表单表格以及其他信息-->
+          {% block content %}{% end %}
+            
+          </div>
+ 
+   
+        </div><!--/span-->
+      </div><!--/row-->
+
+    </div><!--/.fluid-container-->
+{% end %}
+
+
+{% block js %}
+{% end %}
+

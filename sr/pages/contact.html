@@ -1,0 +1,71 @@
+{% extends "./base.html" %}
+{% block title %} 联系我们 {% end %}
+{% block css %}
+<!--css for the homepage-->
+<link rel="stylesheet" type="text/css" href="{{ static_url('css/homepage.css') }}">
+<!--end css for homepage-->
+{% end %}
+
+{% block username %}{% end %}
+
+{% block pane %}
+<div class="container-fluid" >
+      <div class="row-fluid">
+        
+        <div class="span12">
+          <div class="hero-unit">
+            <!--此处显示表单表格以及其他信息-->
+            <address> <strong>Brandon</strong>
+              <br/> 天津工业大学, 管理学院
+              <br/> 天津, 中国 300384
+              <br/><abbr title="Phone">P:</abbr> +86 13652077553
+              <br/><abbr title="Email">E:</abbr> <a href="mailto:wenbindu@yeah.net">wenbindu@yeah.net</a>
+            </address>
+            <dl>
+        <dt>
+          企业名称
+        </dt>
+        <dd>
+          企业信息。
+        </dd>
+        <dt>
+          法人名称
+        </dt>
+        <dd>
+          法人信息
+        </dd>
+        <dt>
+          联系方式
+        </dt>
+        <dd>
+          phone
+        </dd>
+        <dd>
+          email
+        </dd>
+        <dd>
+          address
+        </dd>
+        <dt>
+          合作单位
+        </dt>
+        <dd>
+          ××××××××××。
+        </dd>
+        
+      </dl>
+            <!--end-->
+            
+          </div>
+ 
+   
+        </div><!--/span-->
+      </div><!--/row-->
+
+    </div><!--/.fluid-container-->
+{% end %}
+
+
+{% block js %}
+{% end %}
+

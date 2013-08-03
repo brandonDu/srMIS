@@ -1,0 +1,121 @@
+{% extends "./homepage.html" %}
+
+{% block title %} 库存管理 {% end %}
+{% block content %}
+ <!-- block content --> 
+           <div class="row-fluid">
+              <div class="span4">
+
+  <form class="form-inline">
+    <fieldset>
+      <div id="legend" class="">
+        <legend class="">出库单</legend>
+      </div>
+    
+
+    <div class="control-group">
+
+          <!-- Select Basic -->
+          <label class="control-label">销售编号</label>
+          <div class="controls">
+            <select class="input-large">
+                 <option></option></select>
+          </div>
+        </div>
+    <div class="control-group">
+          <!-- Text input-->
+          <label class="control-label" for="input01">客户名称</label>
+          <div class="controls">
+            <input type="text" placeholder="" class="input-large">
+          </div>
+        </div>
+      <div class="control-group">
+          <!-- Text input-->
+          <label class="control-label" for="input01">电话</label>
+          <div class="controls">
+            <input type="text" placeholder="" class="input-large">
+          </div>
+        </div>
+    <div class="control-group">
+          <!-- Text input-->
+          <label class="control-label" for="input01">地址</label>
+          <div class="controls">
+            <input type="text" placeholder="" class="input-large">
+          </div>
+        </div><div class="control-group">
+          <!-- Text input-->
+          <label class="control-label" for="input01">备注</label>
+          <div class="controls">
+            <input type="text" placeholder="" class="input-large">
+          </div>
+        </div>
+    </fieldset>
+  </form>
+
+              </div>
+              <div class="span8">
+                <table class="table table-bordered table-hover table-condensed">
+            <thead>
+              <tr>
+                <th>编号</th>
+                <th>名称</th>
+                <th>数量</th>
+                <th>单位</th>
+                <th>区号</th>
+                <th>位置</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>TB</td>
+                <td>20</td>
+                <td>袋</td>
+                <td>3</td>
+                <td>3-13</td>
+              </tr> 
+              <tr>
+                <td>1</td>
+                <td>TB</td>
+                <td>20</td>
+                <td>袋</td>
+                <td>3</td>
+                <td>3-13</td>
+              </tr> 
+              <tr>
+                <td>1</td>
+                <td>TB</td>
+                <td>20</td>
+                <td>袋</td>
+                <td>3</td>
+                <td>3-13</td>
+              </tr> 
+              <tr>
+                <td>1</td>
+                <td>TB</td>
+                <td>20</td>
+                <td>袋</td>
+                <td>3</td>
+                <td>3-13</td>
+              </tr>     
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>客户</td>
+                <td colspan='2'>tandan</td>
+                <td>地址</td>
+                <td colspan='2'>××××××××××××××××</td>                
+              </tr>
+              <tr>
+                <td>电话</td>
+                <td colspan='2'>136345678</td>
+                <td>备注</td>
+                <td colspan='2'>××××××××××××××</td>                
+              </tr>
+            </tfoot>
+          </table>
+          <button class='btn-primary btn btn-large'>打印</button>
+              </div>
+            </div>
+          <!-- end block content -->
+{% end %}

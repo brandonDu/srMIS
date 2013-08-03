@@ -1,0 +1,127 @@
+{% extends "./homepage.html" %}
+{% block title %} 销售管理 {% end %}
+
+{% block content %}
+<form class='form-inline'>
+             <label class="control-label" for="input01">客户名称：</label><input type="text" placeholder="" class="input-large"> 
+             <button class="btn btn-primary btn-xlarge">开始销售</button> 
+             <label class="control-label" for="input01">销售编号：</label>
+             <label class="label-important">10000000</label>     
+             </form>
+             <div class="row-fluid">
+            <div class="span4">
+
+  <form class="form-inline">
+    <fieldset>
+      <div id="legend" class="">
+        <legend class="">采购添加</legend>
+      </div>
+  <div class="control-group">
+          <!-- Text input-->
+          <label class="control-label" for="input01">商品编号</label>
+          <div class="controls">
+            <input type="text" placeholder="" class="input-large">
+          </div>
+        </div>
+  <div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">商品名称</label>
+          <div class="controls">
+            <input type="text" placeholder="" class="input-large">
+          </div>
+        </div><div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">数量</label>
+          <div class="controls">
+            <input type="text" placeholder="" class="input-large">
+          </div>
+        </div>
+  <div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">单位</label>
+          <div class="controls">
+            <input type="text" placeholder="" class="input-large">
+          </div>
+        </div>
+ <div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">单价</label>
+          <div class="controls">
+            <input type="text" placeholder="" class="input-large">
+          </div>
+        </div>
+ <div class="control-group">
+          <!-- Text input-->
+          <label class="control-label" for="input01">金额</label>
+          <div class="controls">
+            <input type="text" placeholder="" class="input-large">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label"></label>
+          <!-- Button -->
+          <div class="controls">
+            <button class="btn btn-primary btn-large">添加</button>
+          </div>
+        </div>
+ </fieldset>
+  </form>
+
+
+              </div>
+              <div class="span8">
+                <table class="table table-condensed table-bordered table-hover">
+            <thead>
+              <tr>
+                <th>编号</th>
+                <th>名称</th>
+                <th>数量</th>
+                <th>单价/￥</th>
+                <th>金额/￥</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>TB</td>
+                <td>10</td>
+                <td>2.5</td>
+                <td>25</td>
+                <td><button class="btn btn-primary btn-block">删除</button></td>
+              </tr>
+               <tr>
+                <td>1</td>
+                <td>TB</td>
+                <td>10</td>
+                <td>2.5</td>
+                <td>25</td>
+                <td><button class="btn btn-primary btn-block">删除</button></td>
+              </tr>
+               <tr>
+                <td>1</td>
+                <td>TB</td>
+                <td>10</td>
+                <td>2.5</td>
+                <td>25</td>
+                <td><button class="btn btn-primary btn-block">删除</button></td>
+              </tr>
+            </tbody>
+              <tfoot>
+              <tr>
+                <td>总金额：</td>
+                <td colspan='2'><input type="text" class="input-medium" disabled='disabled'></td>               
+                <td colspan='2'><button class="btn btn-primary btn-block">提交</button></td>
+                
+              </tr>
+             </tfoot>
+            
+          </table>
+
+              </div>
+            </div>
+{% end %}

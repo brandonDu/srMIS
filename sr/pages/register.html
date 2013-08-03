@@ -1,0 +1,108 @@
+{% extends "./homepage.html" %}
+
+{% block title %} 客户注册 {% end %}
+{% block content %}
+
+            <!--此处显示表单表格以及其他信息-->
+<form class="form-horizontal">
+    <fieldset>
+      <div id="legend" class="">
+        <legend class="">客户信息注册</legend>
+      </div>    
+
+    <div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">姓名</label>
+          <div class="controls">
+            <input type="text" placeholder="张某某" class="input-xlarge">
+            <p class="help-inline"></p>
+          </div>
+        </div>
+
+    <div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">年龄</label>
+          <div class="controls">
+            <input type="text" placeholder="1～100" class="input-xlarge">
+            <p class="help-inline">请输入整数</p>
+          </div>
+        </div>
+
+    <div class="control-group">
+          <label class="control-label">性别</label>
+          <div class="controls">
+      <!-- Inline Radios -->
+      <label class="radio inline">
+        <input type="radio" value="男" name="gender" checked="checked">
+        男
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="女" name="gender">
+        女
+      </label>
+    </div>
+        </div><div class="control-group">
+
+          <label class="control-label" for="input01">地址</label>
+          <div class="controls">
+            <input type="text" placeholder="****省****市****镇****村****" class="input-xlarge">
+            <p class="help-inline"></p>
+          </div>
+        </div>
+
+    <div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">手机</label>
+          <div class="controls">
+            <input type="text" placeholder="136×××××553" class="input-xlarge">
+            <p class="help-inline">推荐使用</p>
+          </div>
+        </div>
+    <div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">固定电话</label>
+          <div class="controls">
+            <input type="text" placeholder="0311-88*****2" class="input-xlarge">
+            <p class="help-inline">可以为空</p>
+          </div>
+        </div>
+
+    
+
+    <div class="control-group">
+
+          <!-- Appended input-->
+          <label class="control-label">车辆信息</label>
+          <div class="controls">          
+              <input class="input-xlarge" placeholder="冀A 1234" type="text">
+              <p class="help-inline">或其他标志信息</p>
+          </div>
+
+        </div>
+
+    <div class="control-group">
+          <label class="control-label"></label>
+
+          <!-- File Upload -->
+          <div class="controls">
+            <input class="input-file" id="fileInput" type="file">
+          </div>
+        </div>
+
+    <div class="control-group">
+          <label class="control-label"></label>
+          <!-- Button -->
+          <div class="controls">
+            <button class="btn btn-primary btn-large">注册</button>
+          </div>
+        </div>
+
+    </fieldset>
+  </form>
+  <!--End表单-->
+
+{% end %}
